@@ -1,6 +1,6 @@
 from hashlib import sha256
 entree = input("Entrez le nom du fichier a chiffrer / ddéchiffrer : ")
-sortie = input("Entrez le bom du fichier final : ")
+sortie = input("Entrez le nom du fichier final : ")
 key = input ("Entrez la clé : ")
 keys = sha256(key.encode('utf-8')).digest()
 with open(entree, 'rb') as f_entree:
