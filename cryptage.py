@@ -1,5 +1,5 @@
 from hashlib import sha256
-entree = input("Entrez le nom du fichier a chiffrer / ddéchiffrer : ")
+entree = input("Entrez le nom du fichier a chiffrer / déchiffrer : ")
 sortie = input("Entrez le nom du fichier final : ")
 key = input ("Entrez la clé : ")
 keys = sha256(key.encode('utf-8')).digest()
